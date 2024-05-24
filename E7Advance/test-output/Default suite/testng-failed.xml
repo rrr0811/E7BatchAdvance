@@ -3,11 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MavenParameterTest">
+      <class name="Test1">
         <methods>
-          <include name="launchingGoogleUsingParameterization"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="test1"/>
+          <include name="beforeSuite"/>
+          <include name="aftermethod"/>
+          <include name="test2"/>
+          <include name="beforemethod"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- MavenParameterTest -->
+      </class> <!-- Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

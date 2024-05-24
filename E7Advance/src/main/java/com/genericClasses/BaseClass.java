@@ -2,12 +2,10 @@ package com.genericClasses;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -19,11 +17,19 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.elementRepo.BasePage;
 import com.elementRepo.LoginPage;
+
+/**
+ * @author Harshavardhan G R
+ * 
+ * This class is designed to have all the testcases common conditions
+ * 
+ * 
+ * 
+ */
 
 public class BaseClass implements FrameWorkConstants{
 	public static WebDriver driver;
